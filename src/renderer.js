@@ -28,6 +28,7 @@
 
 import * as React from "react";
 import {createRoot} from "react-dom/client";
+import App from "./App.jsx";
 import './index.css';
 
 console.log('👋 This message is being logged by "renderer.js", included via webpack');
@@ -35,4 +36,4 @@ console.log('👋 This message is being logged by "renderer.js", included via we
 const rootElement = document.getElementById('app');
 
 const root = createRoot(rootElement);
-root.render(<h2>Hello from React!</h2>);
+root.render(<App />);
